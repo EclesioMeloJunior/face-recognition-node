@@ -1,0 +1,13 @@
+{
+	"name": "face-recognition-node",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"readline-sync": "^1.4.9",
+		"twit": "^2.2.11"
+	},
+	"scripts": {
+		"start": "node index.js"
+	}
+}
