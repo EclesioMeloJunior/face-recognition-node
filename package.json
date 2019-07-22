@@ -7,7 +7,8 @@
 		"googleapis": "^41.0.1",
 		"image-downloader": "^3.4.2",
 		"readline-sync": "^1.4.9",
-		"twit": "^2.2.11"
+		"twit": "^2.2.11",
+		"watson-developer-cloud": "^4.0.1"
 	},
 	"scripts": {
 		"start": "node index.js"

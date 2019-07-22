@@ -1,7 +1,7 @@
 var readlineSync = require("readline-sync");
 const components = {
 	imageSearch: require("./image-search"),
-	imageDonwloader: require("./image-downloader"),
+	//imageDonwloader: require("./image-downloader"),
 	faceRecognition: require("./face-recognition")
 };
 
@@ -12,7 +12,7 @@ async function start() {
 	content.keywords = askKeywordsAndParseToArray();
 
 	await components.imageSearch(content);
-	await components.imageDonwloader(content);
+	//await components.imageDonwloader(content);
 	await components.faceRecognition(content);
 
 	console.log(content);
