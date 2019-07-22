@@ -1,8 +1,8 @@
 var readlineSync = require("readline-sync");
 const components = {
 	imageSearch: require("./image-search"),
-	//imageDonwloader: require("./image-downloader"),
-	faceRecognition: require("./face-recognition")
+	faceRecognition: require("./face-recognition"),
+	twitter: require("./twitter")
 };
 
 async function start() {
@@ -12,8 +12,8 @@ async function start() {
 	content.keywords = askKeywordsAndParseToArray();
 
 	await components.imageSearch(content);
-	//await components.imageDonwloader(content);
 	await components.faceRecognition(content);
+	await components.twitter(content);
 
 	console.log(content);
 

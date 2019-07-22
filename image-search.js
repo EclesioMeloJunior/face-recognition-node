@@ -17,7 +17,7 @@ async function imageSearch(content) {
 			cx: googleSearchCredentials.searchEngineID,
 			q: sentence,
 			searchType: "image",
-			num: 3
+			num: 10
 		});
 
 		const imagesUrl = response.data.items.map(item => item.link);
