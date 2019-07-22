@@ -20,8 +20,6 @@ async function imageSearch(content) {
 			num: 3
 		});
 
-		console.log(response);
-
 		const imagesUrl = response.data.items.map(item => item.link);
 		return imagesUrl;
 	}
